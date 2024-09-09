@@ -1,0 +1,76 @@
+/* Estilos para la sección de experiencia y estudios */
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 80px auto 0; /* Ajusta el margen superior para evitar que el contenido se esconda debajo del encabezado fijo */
+    background: linear-gradient(145deg, #1e1e1e, #2b2b2b);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    position: relative; /* Asegura que el margen se maneje correctamente */
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #e0e0e0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.proyect_container {
+    margin-top: 20px;
+}
+
+.proyecto {
+    background: linear-gradient(145deg, #2b2b2b, #333);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.proyecto h3 {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-top: 0;
+}
+
+.proyecto ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.proyecto li {
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.proyecto li ul {
+    padding-left: 20px;
+}
+
+.proyecto li ul li {
+    margin-bottom: 5px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin-top: 100px; /* Ajusta el margen superior en dispositivos móviles si es necesario */
+    }
+
+    .proyecto {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .proyecto h3 {
+        font-size: 1.25rem;
+    }
+}

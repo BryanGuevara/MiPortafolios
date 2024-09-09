@@ -1,0 +1,58 @@
+
+.proyect_container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    padding: 20px; 
+    margin-top: 20px; 
+    background-color: #121212;
+}
+
+.Sub-container {
+    display: flex; 
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente fila si no caben en una */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-top: 80px; /* Ajusta este valor según la altura de tu header */
+}
+
+.proyecto {
+    background-color: #1e1e1e; /* Fondo ligeramente más claro para contraste */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Sombra más suave */
+    padding: 20px; /* Aumentado el relleno para más espacio */
+    width: 300px; /* Fija el ancho de las tarjetas */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    display: flex;
+    flex-direction: column; /* Alineación vertical del contenido */
+    align-items: center; /* Centramos los elementos internamente */
+    text-align: center; /* Centra el texto */
+    color: #e0e0e0; /* Texto claro */
+}
+
+.proyecto:hover {
+    transform: translateY(-10px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); /* Sombra más pronunciada en hover */
+}
+
+.proyecto img {
+    width: 30%; /* Imagen se adapta al ancho del contenedor */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .proyecto {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        max-width: 90%; /* Asegura que no se desborde el contenedor */
+    }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .proyecto {
+        width: calc(50% - 20px); /* Ancho en pantallas medianas */
+    }
+}
