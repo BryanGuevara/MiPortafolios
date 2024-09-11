@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const username = 'BryanGuevara'; //Usuario de Github
-    const token = 'Api Key'; //Token de la api de Github
+    const token = 'ApiKey de GitHub'; //Token de la api de Github
     const pinnedReposContainer = document.getElementById('pinned-repos');
 
     async function fetchPinnedRepos() {
@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <br>
                 <h1>${repo.name}</h1>
                 <img src="https://img.shields.io/github/languages/top/${username}/${repo.name}" alt="Lenguajes de ${repo.name}">
+                <img src="https://img.shields.io/github/release/${username}/${repo.name}" alt="Realese de ${repo.name}">
                 <p>${repo.description || 'No hay descripción disponible.'}</p>
             </div>
         `).join('');

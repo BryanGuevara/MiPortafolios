@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const username = 'BryanGuevara'; //Usuario de Github
-    const token = 'Api Key'; //Token de la api de Github
+    const token = 'ApiKey'; //Token de la api de Github
     const badgeContentElement = document.getElementById('badge-content');
     
     async function getLanguageColors() {
